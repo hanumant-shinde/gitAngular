@@ -1,0 +1,7 @@
+{
+    "employees": [
+      { "id": 1, "name": "John Doe", "designation": "Developer","salary":25000 },
+      { "id": 2, "name": "Jane Smith", "designation": "Designer","salary":30000 }
+    ]
+  }
+  
