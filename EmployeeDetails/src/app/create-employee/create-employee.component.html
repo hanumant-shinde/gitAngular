@@ -1,0 +1,16 @@
+<form [formGroup]="createEmployee" (ngSubmit)="SaveEmployee()" class="container w-50 mt-5 border shadow">
+  <h3>Create Employee</h3>
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" formControlName="name" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="designation" class="form-label">Designation</label>
+    <input type="text" class="form-control" id="designation" formControlName="designation">
+  </div>
+  <div class="mb-3">
+    <label for="salary" class="form-label">Salary</label>
+    <input type="text" class="form-control" id="salary" formControlName="salary">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

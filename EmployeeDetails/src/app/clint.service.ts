@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpHeaders, HttpClient } from '@angular/common/http'; // Import HttpClient for making HTTP requests
+import { HttpHeaders, HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -10,23 +10,30 @@ export class ClintService {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
     })
-  }; // Close the httpOptions object
+  };
 
-  constructor(private http: HttpClient) { } // Inject the HttpClient service
-
-  // You can define methods here to make HTTP requests
+  constructor(private http: HttpClient) { }
 
   getAllemployee(){
     console.log("getAllemployee")
-    let url=this.baseurl+'/employees'
-    return this.http.get(url,this.httpOptions)
+    let url = this.baseurl + '/employees'; // Corrected URL
+    return this.http.get(url, this.httpOptions);
   }
-  getEmployeeid(id:any){
-    let url=this.baseurl+'/empolyees/'+ id;
-    return this.http.get(url,this.httpOptions);
+
+  getEmployeeid(id: any){
+    let url = this.baseurl + '/employees/' + id; // Corrected URL
+    return this.http.get(url, this.httpOptions);
   }
-  deleteEmployee(id:any){
-    let url=this.baseurl+'/employees/'+id;
-    return this.http.delete(url,this.httpOptions)
+
+  deleteEmployee(id: any){
+    let url = this.baseurl + '/employees/' + id; // Corrected URL
+    return this.http.delete(url, this.httpOptions);
+  }
+
+  addEmployee(body: any){
+    console.log(body);
+   
+    let url = this.baseurl + '/employees'; // Corrected URL
+    return this.http.post(url, body, this.httpOptions);
   }
 }

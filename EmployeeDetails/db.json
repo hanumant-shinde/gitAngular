@@ -13,10 +13,30 @@
       "salary": 30000
     },
     {
-      "id": 3,
-      "name": "Jane Smith",
-      "designation": "Designer",
-      "salary": 30000
+      "name": "Hanumant shinde",
+      "designation": "Engineer",
+      "salary": "10000",
+      "_id": 4,
+      "id": 4
+    },
+    {
+      "name": "Hanumant shinde",
+      "designation": "Engineer",
+      "salary": "10000",
+      "_id": 4,
+      "id": 5
+    },
+    {
+      "name": "jay",
+      "designation": "Engineer",
+      "salary": "10000",
+      "id": 6
+    },
+    {
+      "name": "tejas",
+      "designation": "Engineer",
+      "salary": "10000",
+      "id": 7
     }
   ]
 }

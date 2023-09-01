@@ -1,6 +1,8 @@
 <div class="container">
     <div class="row">
+        
         <div class="col-sm-6">
+            <button routerLink="/creatEmployee"> AddEmployee</button>
             <h2>List Employee</h2>
         </div>
     </div>
@@ -23,6 +25,7 @@
                         <td>{{ item.designation }}</td>
                         <td>{{ item.salary }}</td>
                         <td><button (click)="deletemployee(item.id)">delete</button></td>
+                       
                     </tr>
                 </tbody>
             </table>
