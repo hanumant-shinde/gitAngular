@@ -22,7 +22,7 @@
                         <td>{{ item.name }}</td>
                         <td>{{ item.designation }}</td>
                         <td>{{ item.salary }}</td>
-                        <td>{{ item.Action }}</td>
+                        <td><button (click)="deletemployee(item.id)">delete</button></td>
                     </tr>
                 </tbody>
             </table>

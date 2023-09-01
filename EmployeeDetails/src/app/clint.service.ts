@@ -22,7 +22,11 @@ export class ClintService {
     return this.http.get(url,this.httpOptions)
   }
   getEmployeeid(id:any){
-    let url=this.baseurl+'/empolyee/'+ id;
+    let url=this.baseurl+'/empolyees/'+ id;
     return this.http.get(url,this.httpOptions);
+  }
+  deleteEmployee(id:any){
+    let url=this.baseurl+'/employees/'+id;
+    return this.http.delete(url,this.httpOptions)
   }
 }
