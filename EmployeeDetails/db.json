@@ -37,6 +37,12 @@
       "designation": "Engineer",
       "salary": "10000",
       "id": 7
+    },
+    {
+      "name": "Jane fszsd",
+      "designation": "Designer",
+      "salary": 30000,
+      "id": 8
     }
   ]
 }

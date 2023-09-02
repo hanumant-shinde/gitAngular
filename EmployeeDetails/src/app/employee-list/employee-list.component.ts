@@ -36,6 +36,10 @@ export class EmployeeListComponent implements OnInit {
       }
     )
   }
+  editEmployee(id:any){
+    this.router.navigate(['/editEmployee/'+id]);
+
+  }
   
   
 }

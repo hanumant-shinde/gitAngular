@@ -15,7 +15,7 @@
                         <th>Name</th>
                         <th>Designation</th>
                         <th>Salary</th>
-                        <th>Action</th>
+                        <th colspan="2" style="align-items: center; margin-left: 20px;">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,7 +25,7 @@
                         <td>{{ item.designation }}</td>
                         <td>{{ item.salary }}</td>
                         <td><button (click)="deletemployee(item.id)">delete</button></td>
-                       
+                        <td><button (click)="editEmployee(item.id)">edit</button></td>
                     </tr>
                 </tbody>
             </table>

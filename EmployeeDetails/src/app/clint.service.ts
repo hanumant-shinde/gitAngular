@@ -36,4 +36,8 @@ export class ClintService {
     let url = this.baseurl + '/employees'; // Corrected URL
     return this.http.post(url, body, this.httpOptions);
   }
+  updateEmployee(id:any,body:any){
+    let url=this.baseurl + '/employees/'+id;
+    return this.http.put(url,body,this.httpOptions);
+  }
 }
